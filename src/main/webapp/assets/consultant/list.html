@@ -1,0 +1,33 @@
+<ons-page ng-controller="CstListCtrl">
+	
+	<style>
+		.cst-row {
+			background:#fff;
+			margin-top:10px;
+			padding: 5px;
+		}
+		.name {
+			font-size:16px;
+			font-weight:500;
+			padding:5px 0;
+		}
+		.self-desc {
+			font-size:14px;
+			color:#666;
+			font-weight:500;
+		}
+	</style>
+	
+	<div class="gwd-page-content">
+		<ons-row ng-repeat="cst in cstList" class="cst-row" ng-click="viewCst(cst)">
+			<ons-col width="100px">
+				<img class="gwd-photo--large" src="assets/common/img/photo.png">
+			</ons-col>
+			<ons-col>
+				<div class="name">{{cst.nickName}}</div>
+				<div class="self-desc">{{cst.selfDesc}}</div>
+			</ons-col>
+		</ons-row>
+	</div>
+	
+</ons-page>

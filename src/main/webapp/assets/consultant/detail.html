@@ -1,0 +1,38 @@
+<ons-page ng-controller="CstDetailCtrl">
+	<style>
+		.cst-panel {
+			text-align:center;
+			background: #fff;
+			padding:10px;
+		}
+	</style>
+	
+	<ons-toolbar fixed-style>
+        <div class="left"><ons-back-button >返回</ons-back-button></div>
+        <div class="center">{{cst.name}}</div>
+    </ons-toolbar>
+    
+    <div class="gwd-page-content">
+	    <div class="cst-panel">
+	    	<img class="gwd-photo--large" src="assets/common/img/photo.png">
+	    	<div>{{cst.nickName}}&nbsp;{{cst.city}}</div>
+	    	<div>{{cst.selfDesc}}</div>
+	    	<div><span>声望值&nbsp;&nbsp;180</span></div>
+	    	<ons-row ng-init="tab='info'" >
+	    		<ons-col ng-click="tab='info'">简介</ons-col>
+	    		<ons-col ng-click="tab='answer'">回答</ons-col>
+	    	</ons-row>
+	    </div>
+	    
+	    <!--简介 -->
+	    <div ng-if="tab === 'info'" >
+	        <div ng-include="" src="'assets/consultant/info.html'"></div>
+	    </div>
+	    
+	    <!--回答 -->
+	    <div ng-if="tab === 'answer'" >
+	    	<div ng-include="" src="'assets/consultant/answer.html'"></div>
+	    </div>
+    </div>
+    
+</ons-page>

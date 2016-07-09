@@ -1,0 +1,40 @@
+<style>
+	.tag {
+		margin: 0 2px;
+	    background: #fff;
+	    height: 25px;
+	    line-height: 25px;
+	    font-size: 13px;
+	}
+	.card-title {
+		padding-left:5px;
+		font-size:15px;
+		color:#666;
+		font-weight:500;
+		margin-top:-5px;
+	}
+</style>
+
+<div class="gwd-card">
+	<ons-list style="background: gwd-transparent;">
+		<ons-list-item>
+			任职机构 &nbsp;&nbsp;{{cst.workPlace}}
+		</ons-list-item>
+		<ons-list-item>
+			工作岗位 &nbsp;&nbsp;{{cst.position}}
+		</ons-list-item>
+		<ons-list-item>
+			工作年限 &nbsp;&nbsp;{{cst.workExperience}}
+		</ons-list-item>
+		<ons-list-item>
+			顾问岛估价 &nbsp;&nbsp;{{cst.dayValue}}
+		</ons-list-item>
+	</ons-list>
+</div>
+
+<div class="card-title">擅长领域</div>
+<div class="gwd-card gwd-transparent">
+	<div class="gwd-grid-50" ng-repeat="ga in goodAt track by $index">
+		<div class="tag">{{ga}}</div>
+	</div>
+</div>
