@@ -13,4 +13,5 @@ public final class Constants {
 	
 	//本地存储路径
 	public static final String FILE_BASE_PATH = "/mz/app/jianzan/jzfs/";
+	public static final String one = "1";
 }
