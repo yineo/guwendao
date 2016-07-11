@@ -14,6 +14,7 @@ import javax.persistence.Version;
 import org.hibernate.annotations.GenericGenerator;
 
 
+
 @MappedSuperclass
 public abstract class BasicModel implements Serializable {
 	
