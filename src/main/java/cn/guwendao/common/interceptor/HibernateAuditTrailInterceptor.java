@@ -15,7 +15,6 @@ import cn.guwendao.domain.user.model.User;
 
 
 /**
- * 
  * Hibernate 拦截器，用于自动审批创建人、创建时间、修改人和修改时间
  * @author Neo
  */
