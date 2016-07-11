@@ -17,6 +17,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import cn.guwendao.domain.basic.model.BasicModel;
 
+//Neo
 @Entity
 @Table(name = "user")
 @DynamicUpdate(true)
@@ -37,9 +38,9 @@ public class User extends BasicModel implements Serializable, UserDetails {
 	private String workExperience;  //工作年限
 	private Integer dayValue;       //人天估价
 	
-	private String goodAt;  //擅长领域 ,分隔
+	/*private String goodAt;  //擅长领域 ,分隔
 	private String served;  //服务过的企业 ,分隔 
-	private String tag;     //标签 ,分隔
+	private String tag;     //标签 ,分隔*/
 	
 	//安全相关字段
     private boolean enabled; // 账户启用
@@ -141,30 +142,6 @@ public class User extends BasicModel implements Serializable, UserDetails {
 	}
 	public void setDayValue(Integer dayValue) {
 		this.dayValue = dayValue;
-	}
-	
-	@Column(length=500)
-	public String getGoodAt() {
-		return goodAt;
-	}
-	public void setGoodAt(String goodAt) {
-		this.goodAt = goodAt;
-	}
-	
-	@Column(length=500)
-	public String getServed() {
-		return served;
-	}
-	public void setServed(String served) {
-		this.served = served;
-	}
-	
-	@Column(length=500)
-	public String getTag() {
-		return tag;
-	}
-	public void setTag(String tag) {
-		this.tag = tag;
 	}
 	
 	@JsonIgnore

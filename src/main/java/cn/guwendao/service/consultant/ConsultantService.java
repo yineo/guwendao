@@ -26,7 +26,7 @@ public class ConsultantService {
 	 * @return
 	 */
 	@POST
-	@Path("public/cst/list")
+	@Path("wx/cst/list")
 	public RestEntity<List> getConsultantList(Map<String,Object> param){
 		
 		Integer page = (Integer)param.get("page");
