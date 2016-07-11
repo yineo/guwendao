@@ -37,7 +37,7 @@ public class User extends BasicModel implements Serializable, UserDetails {
 	private String position;    //职务
 	private String workExperience;  //工作年限
 	private Integer dayValue;       //人天估价
-	
+	//测试
 	/*private String goodAt;  //擅长领域 ,分隔
 	private String served;  //服务过的企业 ,分隔 
 	private String tag;     //标签 ,分隔*/
