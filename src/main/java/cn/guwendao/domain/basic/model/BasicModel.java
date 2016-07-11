@@ -13,11 +13,6 @@ import javax.persistence.Version;
 
 import org.hibernate.annotations.GenericGenerator;
 
-/**
- * 
- * @author near
- *
- */
 
 @MappedSuperclass
 public abstract class BasicModel implements Serializable {
