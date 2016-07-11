@@ -1,5 +1,8 @@
 package cn.guwendao.common.util.query;
 
+/*
+ * 
+ */
 import java.util.ArrayList;
 import java.util.List;
 
